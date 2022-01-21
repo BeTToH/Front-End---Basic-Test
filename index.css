@@ -1,0 +1,121 @@
+body {
+    background-color: #eee;
+    line-height: 1.5rem;
+    font-family: "Helvetica Neue", Helvetica, serif;
+
+    margin: 0 auto;
+}
+
+header {    
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 1px;
+    position: relative;  
+    background-color: #008DCA;       
+}
+
+main {
+    width: 60%;    
+    margin: 0 auto;
+    padding: 2% 4%;    
+}
+
+form{    
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    row-gap: 10px;    
+    column-gap: 2rem;
+  }
+  
+  form div{
+    display: flex;
+    flex: 20%;
+    align-items: center;  
+    column-gap: 10px;
+  }
+  
+  form label {  
+    color: #373A3C;
+  }
+  
+  form label::after {
+    content: ":";
+  }
+  
+  form input[type="submit"] {  
+    background-color: #0275D8;
+    color: #FFFFFF;
+  }
+  
+  form input {
+    border: #CCCCCC 0.2px solid;
+    border-radius: 4px;
+    padding: 7px 12px;  
+    outline: none;
+    color: #373A3C;
+    flex: 1;
+  }
+  
+  form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999999;
+    opacity: 1; /* Firefox */
+  }
+  
+  form input:focus {
+    border-color: #008DCA;
+  }
+  
+  form + table {
+    margin-top: 1em;
+  }
+  
+  table {
+    width: 100%;  
+  }
+  
+  table thead {
+    background-color: #008DCA;
+    color: #FFFFFF;
+    border: 0.2px solid #CCCCCC;
+  }
+  
+  table thead th{
+    text-align: left;
+    border: 0.2px solid gray;
+    border-top: 0;
+    padding: 8px 10px;
+  }
+  
+  table tbody td {
+    text-align: left;
+    border: 0.2px solid #CCCCCC;
+    border-top: 0;
+    padding: 8px 10px;
+  }
+  
+  table tbody{
+    color: #373A3C;
+  }
+  
+  table .options {
+    cursor: default;  
+    width: 5%
+  }
+  
+  table tbody tr td:first-child{
+    color: red;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .delete-btn {
+    border: none;  
+    padding: 7px 12px;  
+    outline: none;
+    color: #373A3C; 
+    cursor: pointer;
+    color: #B10000;
+  }
+  
